@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.CZ4062</groupId>
+  <artifactId>dummy-project</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Dummy Project</name>
+  
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-core
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-core</artifactId>
+	    <version>4.3.4.RELEASE</version>
+	</dependency> -->
+  	<!-- https://mvnrepository.com/artifact/tomcat/catalina -->
+	<dependency>
+    	<groupId>tomcat</groupId>
+    	<artifactId>catalina</artifactId>
+    	<version>5.5.20</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-core
+	<dependency>
+    	<groupId>org.apache.activemq</groupId>
+    	<artifactId>activemq-core</artifactId>
+    	<version>5.5.0</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina
+	<dependency>
+    	<groupId>org.apache.tomcat</groupId>
+    	<artifactId>tomcat-catalina</artifactId>
+    	<version>7.0.30</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload
+	<dependency>
+	    <groupId>commons-fileupload</groupId>
+	    <artifactId>commons-fileupload</artifactId>
+	    <version>1.2.2</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/org.apache.geronimo.specs/geronimo-servlet_3.0_spec
+	<dependency>
+	    <groupId>org.apache.geronimo.specs</groupId>
+	    <artifactId>geronimo-servlet_3.0_spec</artifactId>
+	    <version>1.0</version>
+	    <scope>provided</scope>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-validator</artifactId>
+	    <version>5.1.0.Final</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/io.undertow/undertow-core
+	<dependency>
+	    <groupId>io.undertow</groupId>
+	    <artifactId>undertow-core</artifactId>
+	    <version>1.1.0.Final</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/org.apache.wicket/wicket-core
+	<dependency>
+	    <groupId>org.apache.wicket</groupId>
+	    <artifactId>wicket-core</artifactId>
+	    <version>7.1.0</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/org.apache.ranger/ranger-plugins-common
+	<dependency>
+	    <groupId>org.apache.ranger</groupId>
+	    <artifactId>ranger-plugins-common</artifactId>
+	    <version>0.6.1</version>
+	</dependency> -->
+	<!-- https://mvnrepository.com/artifact/org.apache.tomcat/jasper
+	<dependency>
+	    <groupId>org.apache.tomcat</groupId>
+	    <artifactId>jasper</artifactId>
+	    <version>6.0.13</version>
+	</dependency> -->
+	
+	
+	
+  </dependencies>
+  <build>
+  	<plugins>
+  		<plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <version>4.0.0</version>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>check</goal>
+                      </goals>
+                  </execution>
+              </executions>
+            </plugin>
+  	</plugins>
+  </build>
+  <!-- <build>
+  	<plugins>
+    	<plugin>
+      		<groupId>org.sonatype.ossindex.maven</groupId>
+      		<artifactId>ossindex-maven-plugin</artifactId>
+      		<executions>
+       	 		<execution>
+          			<id>audit-dependencies</id>
+          			<phase>validate</phase>
+          			<goals>
+            			<goal>audit</goal>
+          			</goals>
+        		</execution>
+      		</executions>
+    	</plugin>
+  	</plugins>
+	</build> -->
+</project>
